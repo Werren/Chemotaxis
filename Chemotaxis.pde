@@ -2,7 +2,7 @@ Bacteria fred;
 void setup()
 {
   size(500,500);
-  fred=new Bacteria();
+  fred=new Bacteria(250,250);
 }
 void draw()
 {
@@ -13,10 +13,10 @@ void draw()
 class Bacteria
 {
   int myX, myY;
-  Bacteria()
+  Bacteria(int x, int y)
   {
-    myX=250;
-    myY=250;
+    myX=x;
+    myY=y;
   }
   void move()
   {
